@@ -1,0 +1,16 @@
+E:\projects\sandbox\Patterns\Patterns\bin\Debug\Patterns.exe.config
+E:\projects\sandbox\Patterns\Patterns\bin\Debug\Patterns.exe
+E:\projects\sandbox\Patterns\Patterns\bin\Debug\Patterns.pdb
+E:\projects\sandbox\Patterns\Patterns\obj\Debug\Patterns.exe
+E:\projects\sandbox\Patterns\Patterns\obj\Debug\Patterns.pdb
+E:\projects\sandbox\Patterns\Patterns\bin\Debug\PatternsLib.dll
+E:\projects\sandbox\Patterns\Patterns\bin\Debug\PatternsLib.pdb
+E:\projects\sandbox\Patterns\Patterns\obj\Debug\PatternsUI.csprojResolveAssemblyReference.cache
+D:\Projects\patterns.net\Patterns\bin\Debug\Patterns.exe.config
+D:\Projects\patterns.net\Patterns\obj\Debug\Patterns.exe
+D:\Projects\patterns.net\Patterns\obj\Debug\Patterns.pdb
+D:\Projects\patterns.net\Patterns\bin\Debug\Patterns.exe
+D:\Projects\patterns.net\Patterns\bin\Debug\Patterns.pdb
+D:\Projects\patterns.net\Patterns\bin\Debug\PatternsLib.dll
+D:\Projects\patterns.net\Patterns\bin\Debug\PatternsLib.pdb
+D:\Projects\patterns.net\Patterns\obj\Debug\PatternsUI.csprojResolveAssemblyReference.cache

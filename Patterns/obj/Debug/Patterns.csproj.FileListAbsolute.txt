@@ -1,0 +1,6 @@
+E:\projects\sandbox\Patterns\Patterns\bin\Debug\Patterns.exe.config
+E:\projects\sandbox\Patterns\Patterns\bin\Debug\Patterns.exe
+E:\projects\sandbox\Patterns\Patterns\bin\Debug\Patterns.pdb
+E:\projects\sandbox\Patterns\Patterns\obj\Debug\Patterns.csprojResolveAssemblyReference.cache
+E:\projects\sandbox\Patterns\Patterns\obj\Debug\Patterns.exe
+E:\projects\sandbox\Patterns\Patterns\obj\Debug\Patterns.pdb

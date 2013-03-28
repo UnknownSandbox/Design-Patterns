@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{61C579BD-7B3B-4101-A3F2-3EDEBDA85FC2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PatternsLib</RootNamespace>
+    <AssemblyName>PatternsLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Patterns\AbstractFactory\Example\AbstractFactory.cs" />
+    <Compile Include="Patterns\AbstractFactory\Example\AbstractProductA.cs" />
+    <Compile Include="Patterns\AbstractFactory\Example\AbstractProductB.cs" />
+    <Compile Include="Patterns\AbstractFactory\Example\Client.cs" />
+    <Compile Include="Patterns\AbstractFactory\Example\Factories\ConcreteFactory1.cs" />
+    <Compile Include="Patterns\AbstractFactory\Example\Factories\ConcreteFactory2.cs" />
+    <Compile Include="Patterns\AbstractFactory\Example\Factories\ConcreteFactory3.cs" />
+    <Compile Include="Patterns\AbstractFactory\Example\Factories\ConcreteFactory4.cs" />
+    <Compile Include="Patterns\AbstractFactory\Example\Products\ProductA1.cs" />
+    <Compile Include="Patterns\AbstractFactory\Example\Products\ProductA2.cs" />
+    <Compile Include="Patterns\AbstractFactory\Example\Products\ProductB1.cs" />
+    <Compile Include="Patterns\AbstractFactory\Example\Products\ProductB2.cs" />
+    <Compile Include="Patterns\Adapter\Example\Adaptee.cs" />
+    <Compile Include="Patterns\Adapter\Example\Adapter.cs" />
+    <Compile Include="Patterns\Adapter\Example\Target.cs" />
+    <Compile Include="Patterns\Builder\Example\Builder.cs" />
+    <Compile Include="Patterns\Builder\Example\Builders\ConcreteBuilder1.cs" />
+    <Compile Include="Patterns\Builder\Example\Builders\ConcreteBuilder2.cs" />
+    <Compile Include="Patterns\Builder\Example\Director.cs" />
+    <Compile Include="Patterns\Builder\Example\Product.cs" />
+    <Compile Include="Patterns\FactoryMethod\Example\Creator.cs" />
+    <Compile Include="Patterns\FactoryMethod\Example\Creators\Creator1.cs" />
+    <Compile Include="Patterns\FactoryMethod\Example\Creators\Creator2.cs" />
+    <Compile Include="Patterns\FactoryMethod\Example\Product.cs" />
+    <Compile Include="Patterns\FactoryMethod\Example\Products\ConcreteProduct1.cs" />
+    <Compile Include="Patterns\FactoryMethod\Example\Products\ConcreteProduct2.cs" />
+    <Compile Include="Patterns\Factory\Example\Factory.cs" />
+    <Compile Include="Patterns\Factory\Example\IProduct.cs" />
+    <Compile Include="Patterns\Factory\Example\Products\ProductA.cs" />
+    <Compile Include="Patterns\Factory\Example\Products\ProductB.cs" />
+    <Compile Include="Patterns\Factory\Example\ProductTypes.cs" />
+    <Compile Include="Patterns\Factory\Factory.cs" />
+    <Compile Include="Patterns\LazyLoad\Example\BigObject.cs" />
+    <Compile Include="Patterns\LazyLoad\LazyInit.cs" />
+    <Compile Include="Patterns\ObjectPool\Example\Creator.cs" />
+    <Compile Include="Patterns\ObjectPool\Example\Reusable.cs" />
+    <Compile Include="Patterns\ObjectPool\Example\ReusablePool.cs" />
+    <Compile Include="Patterns\ObjectPool\ICreation.cs" />
+    <Compile Include="Patterns\ObjectPool\ObjectPool.cs" />
+    <Compile Include="Patterns\Prototype\Example\ConcretePrototype1.cs" />
+    <Compile Include="Patterns\Prototype\Example\ConcretePrototype2.cs" />
+    <Compile Include="Patterns\Prototype\Example\ExamplePrototype.cs" />
+    <Compile Include="Patterns\Prototype\Example_2\ConcretePrototype1.cs" />
+    <Compile Include="Patterns\Prototype\Example_2\ConcretePrototype2.cs" />
+    <Compile Include="Patterns\Prototype\Example_2\ExamplePrototype.cs" />
+    <Compile Include="Patterns\Prototype\Prototype.cs" />
+    <Compile Include="Patterns\Singleton\Example\Logger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
