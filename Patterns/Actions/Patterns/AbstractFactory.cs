@@ -31,25 +31,18 @@ namespace Patterns.Actions.Patterns
  
         private PatternsLib.Patterns.AbstractFactory.Example.AbstractFactory _getFactoryByKey(string userKey)
         {
-            if (userKey == "1")
+            switch (userKey)
             {
-                return new ConcreteFactory1();
-            }
-            else if (userKey == "2")
-            {
-                return new ConcreteFactory2();
-            }
-            else if (userKey == "3")
-            {
-                return new ConcreteFactory3();
-            }
-            else if (userKey == "4")
-            {
-                return new ConcreteFactory4();
-            }
-            else
-            {
-                throw (new Exception("Unknown key for factory type"));
+                case "1":
+                    return new ConcreteFactory1();
+                case "2":
+                    return new ConcreteFactory2();
+                case "3":
+                    return new ConcreteFactory3();
+                case "4":
+                    return new ConcreteFactory4();
+                default:
+                    throw (new Exception("Unknown key for factory type"));
             }
         }
     }

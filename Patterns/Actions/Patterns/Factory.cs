@@ -27,17 +27,14 @@ namespace Patterns.Actions.Patterns
  
         private ProductTypes _getTypeByKey(string userKey)
         {
-            if (userKey == "1")
+            switch (userKey)
             {
-                return ProductTypes.ProductA;
-            }
-            else if (userKey == "2")
-            {
-                return ProductTypes.ProductB;
-            }
-            else
-            {
-                throw (new Exception("Unknown key for product type"));
+                case "1":
+                    return ProductTypes.ProductA;
+                case "2":
+                    return ProductTypes.ProductB;
+                default:
+                    throw (new Exception("Unknown key for product type"));
             }
         }
     }

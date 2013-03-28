@@ -39,17 +39,14 @@ namespace Patterns.Actions.Patterns
 
         private PatternsLib.Patterns.Builder.Example.Builder _getBuilderByKey(string userKey)
         {
-            if (userKey == "1")
+            switch (userKey)
             {
-                return new ConcreteBuilder1();
-            }
-            else if (userKey == "2")
-            {
-                return new ConcreteBuilder2();
-            }
-            else
-            {
-                throw (new Exception("Unknown key for product type"));
+                case "1":
+                    return new ConcreteBuilder1();
+                case "2":
+                    return new ConcreteBuilder2();
+                default:
+                    throw (new Exception("Unknown key for product type"));
             }
         }
     }
