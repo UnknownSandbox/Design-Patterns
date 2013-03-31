@@ -54,6 +54,11 @@
     <Compile Include="Patterns\Adapter\Example\Adaptee.cs" />
     <Compile Include="Patterns\Adapter\Example\Adapter.cs" />
     <Compile Include="Patterns\Adapter\Example\Target.cs" />
+    <Compile Include="Patterns\Bridge\Example\Abstraction.cs" />
+    <Compile Include="Patterns\Bridge\Example\ConcreteImplementorA.cs" />
+    <Compile Include="Patterns\Bridge\Example\ConcreteImplementorB.cs" />
+    <Compile Include="Patterns\Bridge\Example\Implementor.cs" />
+    <Compile Include="Patterns\Bridge\Example\RefinedAbstraction.cs" />
     <Compile Include="Patterns\Builder\Example\Builder.cs" />
     <Compile Include="Patterns\Builder\Example\Builders\ConcreteBuilder1.cs" />
     <Compile Include="Patterns\Builder\Example\Builders\ConcreteBuilder2.cs" />

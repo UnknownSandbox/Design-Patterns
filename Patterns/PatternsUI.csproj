@@ -46,6 +46,7 @@
     <Compile Include="Actions\PatternsList.cs" />
     <Compile Include="Actions\Patterns\AbstractFactory.cs" />
     <Compile Include="Actions\Patterns\Adapter.cs" />
+    <Compile Include="Actions\Patterns\Bridge.cs" />
     <Compile Include="Actions\Patterns\Builder.cs" />
     <Compile Include="Actions\Patterns\Prototype.cs" />
     <Compile Include="Actions\Patterns\FactoryMethod.cs" />
