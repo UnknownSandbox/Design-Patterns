@@ -86,6 +86,11 @@
     <Compile Include="Patterns\Factory\Example\Products\ProductB.cs" />
     <Compile Include="Patterns\Factory\Example\ProductTypes.cs" />
     <Compile Include="Patterns\Factory\Factory.cs" />
+    <Compile Include="Patterns\Flyweight\Example\Character.cs" />
+    <Compile Include="Patterns\Flyweight\Example\CharacterA.cs" />
+    <Compile Include="Patterns\Flyweight\Example\CharacterB.cs" />
+    <Compile Include="Patterns\Flyweight\Example\CharacterFactory.cs" />
+    <Compile Include="Patterns\Flyweight\Example\CharacterZ.cs" />
     <Compile Include="Patterns\LazyLoad\Example\BigObject.cs" />
     <Compile Include="Patterns\LazyLoad\LazyInit.cs" />
     <Compile Include="Patterns\ObjectPool\Example\Creator.cs" />

@@ -52,6 +52,7 @@
     <Compile Include="Actions\Patterns\Composite.cs" />
     <Compile Include="Actions\Patterns\Decorator.cs" />
     <Compile Include="Actions\Patterns\Facade.cs" />
+    <Compile Include="Actions\Patterns\Flyweight.cs" />
     <Compile Include="Actions\Patterns\Prototype.cs" />
     <Compile Include="Actions\Patterns\FactoryMethod.cs" />
     <Compile Include="Actions\Patterns\Factory.cs" />
