@@ -42,12 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Actions\PatternAction.cs" />
-    <Compile Include="Actions\PatternActionItem.cs" />
+    <Compile Include="Actions\PatternsActniosContainer.cs" />
     <Compile Include="Actions\PatternsList.cs" />
+    <Compile Include="Actions\PatternStruct.cs" />
     <Compile Include="Actions\Patterns\AbstractFactory.cs" />
     <Compile Include="Actions\Patterns\Adapter.cs" />
     <Compile Include="Actions\Patterns\Bridge.cs" />
     <Compile Include="Actions\Patterns\Builder.cs" />
+    <Compile Include="Actions\Patterns\Composite.cs" />
     <Compile Include="Actions\Patterns\Prototype.cs" />
     <Compile Include="Actions\Patterns\FactoryMethod.cs" />
     <Compile Include="Actions\Patterns\Factory.cs" />

@@ -1,48 +1,53 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Patterns.Actions.Patterns;
 
 namespace Patterns.Actions
 {
-    class PatternsList
+    internal class PatternsList
     {
-        private List<string> _patternsList;
+        private readonly PatternsActniosContainer _patternsList;
+        private readonly string _quitKey = "q";
+
 
         public PatternsList()
         {
-            _patternsList = new List<string>
+            _patternsList = _createPatternList();
+        }
+
+        private PatternsActniosContainer _createPatternList()
+        {
+            return new PatternsActniosContainer
                 {
-                    "Factory",
-                    "Abstract Factory",
-                    "Builder",
-                    "Factory Method",
-                    "Lazy Load",
-                    "Object Pool",
-                    "Prototype",
-                    "Singleton",
-                    "Adapter",
-                    "Bridge"
+                    new PatternStruct("0", "Factory", new Prototype()),
+                    new PatternStruct("1", "Abstract Factory", new AbstractFactory()),
+                    new PatternStruct("2", "Factory Method", new FactoryMethod()),
+                    new PatternStruct("3", "Lazy Load", new LazyLoad()),
+                    new PatternStruct("4", "Object Pool", new ObjectPool()),
+                    new PatternStruct("5", "Prototype", new Prototype()),
+                    new PatternStruct("6", "Singleton", new Singleton()),
+                    new PatternStruct("7", "Adapter", new Adapter()),
+                    new PatternStruct("8", "Bridge", new Bridge()),
+                    new PatternStruct("9", "Builder", new Builder()),
+                    new PatternStruct("10", "Composite", new Composite())
                 };
+             
         }
 
         public void Execute()
         {
             Console.Clear();
-            Console.WriteLine("\n=============Pattern List:================== \n");  
-            for (int index = 0; index < _patternsList.Count; index++)
+            Console.WriteLine("\n=============Pattern List:================== \n");
+
+            foreach (var item in _patternsList.List)
             {
-                var item = _patternsList[index];
-                Console.WriteLine("Key - {0}  | Pattern - {1}", index, item); 
+                Console.WriteLine("Key - {0}  | Pattern - {1}", item.Key, item.Name);
             }
-            string userKey;
-            Console.Write("Press key: ");
-            userKey =  Console.ReadLine();
+
+            Console.Write("Press key ( {0} for quit ): ", _quitKey);
+            var userKey = Console.ReadLine();
 
             _selectPattern(userKey);
-
         }
 
         private void _selectPattern(string index)
@@ -50,68 +55,43 @@ namespace Patterns.Actions
             Console.WriteLine(" ");
             try
             {
-                if (index == "q")
+                if (index == _quitKey)
                 {
                     return;
                 }
-              
+
                 var actionItem = _getPatternActionItemByKey(index);
 
                 if (actionItem == null)
                 {
                     Console.WriteLine("Unknown action.Try Again.");
-                    
                 }
                 else
                 {
-                    _executeAction(actionItem);   
+                    _executeAction(actionItem);
                 }
             }
             catch (Exception e)
             {
-                Console.WriteLine("\n Pattern executing failed. Message: {0} \n\n",e.Message);
+                Console.WriteLine("\n Pattern executing failed. Message: {0} \n\n", e.Message);
             }
             Console.Write("Press any key");
             Console.ReadKey();
             Console.Clear();
-            Execute(); 
+            Execute();
         }
 
-        private void _executeAction(PatternActionItem actionItem)
+        private void _executeAction(PatternStruct actionItem)
         {
             Console.Clear();
-            Console.WriteLine("\n============={0} Pattern:================== \n", actionItem.PatternName);
-            actionItem.Action.Execute();
-            Console.WriteLine("\n============={0} Pattern End:================== \n", actionItem.PatternName);
+            Console.WriteLine("\n============={0} Pattern:================== \n", actionItem.Name);
+            actionItem.Pattern.Execute();
+            Console.WriteLine("\n============={0} Pattern End:================== \n", actionItem.Name);
         }
 
-        private PatternActionItem _getPatternActionItemByKey(string index)
+        private PatternStruct _getPatternActionItemByKey(string index)
         {
-            switch (index)
-            {
-                case "0":
-                    return new PatternActionItem(new Prototype(), "Factory");
-                case "1":
-                    return new PatternActionItem(new AbstractFactory(), "Abstract Factory");
-                case "2":
-                    return new PatternActionItem(new Builder(), "Builder");
-                case "3":
-                    return new PatternActionItem(new FactoryMethod(), "Factory Method");
-                case "4":
-                    return new PatternActionItem(new LazyLoad(), "Lazy Load");
-                case "5":
-                    return new PatternActionItem(new ObjectPool(), "Object Pool");
-                case "6":
-                    return new PatternActionItem(new Prototype(), "Prototype");
-                case "7":
-                    return new PatternActionItem(new Singleton(), "Singleton");
-                case "8":
-                    return new PatternActionItem(new Adapter(), "Adapter");
-                case "9":
-                     return new PatternActionItem(new Bridge(), "Bridge");
-                default:
-                    return null;
-            }
+            return _patternsList.List.FirstOrDefault(pattern => pattern.Key == index);
         }
     }
 }
