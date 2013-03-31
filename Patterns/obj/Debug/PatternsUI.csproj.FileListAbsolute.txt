@@ -14,3 +14,11 @@ D:\Projects\patterns.net\Patterns\bin\Debug\Patterns.pdb
 D:\Projects\patterns.net\Patterns\bin\Debug\PatternsLib.dll
 D:\Projects\patterns.net\Patterns\bin\Debug\PatternsLib.pdb
 D:\Projects\patterns.net\Patterns\obj\Debug\PatternsUI.csprojResolveAssemblyReference.cache
+E:\projects\patterns\Patterns\bin\Debug\Patterns.exe.config
+E:\projects\patterns\Patterns\obj\Debug\Patterns.exe
+E:\projects\patterns\Patterns\obj\Debug\Patterns.pdb
+E:\projects\patterns\Patterns\bin\Debug\Patterns.exe
+E:\projects\patterns\Patterns\bin\Debug\Patterns.pdb
+E:\projects\patterns\Patterns\bin\Debug\PatternsLib.dll
+E:\projects\patterns\Patterns\bin\Debug\PatternsLib.pdb
+E:\projects\patterns\Patterns\obj\Debug\PatternsUI.csprojResolveAssemblyReference.cache

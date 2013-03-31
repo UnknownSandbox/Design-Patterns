@@ -23,7 +23,8 @@ namespace Patterns.Actions
                     "Object Pool",
                     "Prototype",
                     "Singleton",
-                    "Adapter"
+                    "Adapter",
+                    "Bridge"
                 };
         }
 
@@ -106,6 +107,8 @@ namespace Patterns.Actions
                     return new PatternActionItem(new Singleton(), "Singleton");
                 case "8":
                     return new PatternActionItem(new Adapter(), "Adapter");
+                case "9":
+                     return new PatternActionItem(new Bridge(), "Bridge");
                 default:
                     return null;
             }
