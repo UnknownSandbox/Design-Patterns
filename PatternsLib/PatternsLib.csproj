@@ -72,6 +72,8 @@
     <Compile Include="Patterns\Decorator\Example\ConcreteDecoratorA.cs" />
     <Compile Include="Patterns\Decorator\Example\ConcreteDecoratorB.cs" />
     <Compile Include="Patterns\Decorator\Example\Decorator.cs" />
+    <Compile Include="Patterns\Facade\Example\Facade.cs" />
+    <Compile Include="Patterns\Facade\Example\Library.cs" />
     <Compile Include="Patterns\FactoryMethod\Example\Creator.cs" />
     <Compile Include="Patterns\FactoryMethod\Example\Creators\Creator1.cs" />
     <Compile Include="Patterns\FactoryMethod\Example\Creators\Creator2.cs" />
