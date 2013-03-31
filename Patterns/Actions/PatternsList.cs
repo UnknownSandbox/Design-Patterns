@@ -29,7 +29,8 @@ namespace Patterns.Actions
                     new PatternStruct("7", "Adapter", new Adapter()),
                     new PatternStruct("8", "Bridge", new Bridge()),
                     new PatternStruct("9", "Builder", new Builder()),
-                    new PatternStruct("10", "Composite", new Composite())
+                    new PatternStruct("10", "Composite", new Composite()),
+                    new PatternStruct("11", "Decorator", new Decorator())
                 };
              
         }
