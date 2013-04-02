@@ -68,6 +68,10 @@
     <Compile Include="Patterns\Chain\Example\ConcreteHandler1.cs" />
     <Compile Include="Patterns\Chain\Example\ConcreteHandler2.cs" />
     <Compile Include="Patterns\Chain\Example\Handler.cs" />
+    <Compile Include="Patterns\Command\Example\Calculator.cs" />
+    <Compile Include="Patterns\Command\Example\CalculatorCommand.cs" />
+    <Compile Include="Patterns\Command\Example\Command.cs" />
+    <Compile Include="Patterns\Command\Example\User.cs" />
     <Compile Include="Patterns\Composite\Example\Component.cs" />
     <Compile Include="Patterns\Composite\Example\Composite.cs" />
     <Compile Include="Patterns\Composite\Example\Leaf.cs" />

@@ -50,6 +50,7 @@
     <Compile Include="Actions\Patterns\Bridge.cs" />
     <Compile Include="Actions\Patterns\Builder.cs" />
     <Compile Include="Actions\Patterns\Chain.cs" />
+    <Compile Include="Actions\Patterns\Command.cs" />
     <Compile Include="Actions\Patterns\Composite.cs" />
     <Compile Include="Actions\Patterns\Decorator.cs" />
     <Compile Include="Actions\Patterns\Facade.cs" />
