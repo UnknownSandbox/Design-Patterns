@@ -32,7 +32,9 @@ namespace Patterns.Actions
                     new PatternStruct("10", "Composite", new Composite()),
                     new PatternStruct("11", "Decorator", new Decorator()),
                     new PatternStruct("12", "Facade", new Facade()),
-                    new PatternStruct("13", "Flyweight", new Flyweight())
+                    new PatternStruct("13", "Flyweight", new Flyweight()),
+                    new PatternStruct("14", "Proxy", new Proxy()),
+                    new PatternStruct("15", "Chain", new Chain()),
                 };
              
         }

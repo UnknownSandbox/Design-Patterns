@@ -64,6 +64,10 @@
     <Compile Include="Patterns\Builder\Example\Builders\ConcreteBuilder2.cs" />
     <Compile Include="Patterns\Builder\Example\Director.cs" />
     <Compile Include="Patterns\Builder\Example\Product.cs" />
+    <Compile Include="Patterns\Chain\Example\ConcreteHandler3.cs" />
+    <Compile Include="Patterns\Chain\Example\ConcreteHandler1.cs" />
+    <Compile Include="Patterns\Chain\Example\ConcreteHandler2.cs" />
+    <Compile Include="Patterns\Chain\Example\Handler.cs" />
     <Compile Include="Patterns\Composite\Example\Component.cs" />
     <Compile Include="Patterns\Composite\Example\Composite.cs" />
     <Compile Include="Patterns\Composite\Example\Leaf.cs" />
@@ -105,6 +109,9 @@
     <Compile Include="Patterns\Prototype\Example_2\ConcretePrototype2.cs" />
     <Compile Include="Patterns\Prototype\Example_2\ExamplePrototype.cs" />
     <Compile Include="Patterns\Prototype\Prototype.cs" />
+    <Compile Include="Patterns\Proxy\Example\IMath.cs" />
+    <Compile Include="Patterns\Proxy\Example\Math.cs" />
+    <Compile Include="Patterns\Proxy\Example\MathProxy.cs" />
     <Compile Include="Patterns\Singleton\Example\Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

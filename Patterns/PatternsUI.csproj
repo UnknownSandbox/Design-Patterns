@@ -49,6 +49,7 @@
     <Compile Include="Actions\Patterns\Adapter.cs" />
     <Compile Include="Actions\Patterns\Bridge.cs" />
     <Compile Include="Actions\Patterns\Builder.cs" />
+    <Compile Include="Actions\Patterns\Chain.cs" />
     <Compile Include="Actions\Patterns\Composite.cs" />
     <Compile Include="Actions\Patterns\Decorator.cs" />
     <Compile Include="Actions\Patterns\Facade.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Actions\Patterns\Factory.cs" />
     <Compile Include="Actions\Patterns\LazyLoad.cs" />
     <Compile Include="Actions\Patterns\ObjectPool.cs" />
+    <Compile Include="Actions\Patterns\Proxy.cs" />
     <Compile Include="Actions\Patterns\Singleton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
